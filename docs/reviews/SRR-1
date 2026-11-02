@@ -1,0 +1,9 @@
+Mission - 
+Design and test an fixed-wing drone with on-board sensing, capable of vision-assisted runway appraoch alignment.
+The aircraft combines aerodynamic and mechanical design, flight controls, avionics, and onboard computer vision to estimate its lateral position relaitive to a designed runway
+The project aims to show reliable hardware-software integration through a structured engineering proces involving requirements definition, subsystem design, fabrication, verification, and experimental flight testing. 
+The long term goal is to develop and validate a vision-based guidance system capable of assisting autonomous approach and landing operations. 
+
+December success - 
+By December 15th, the team aims to accomplish the following:
+Fully assembled, ground-tested, custom-fixed wing aircraft with avionics, a repeatable camera fixture, and an onboard estimator that reports how far left or right the aircraft is from a marked runway. 
