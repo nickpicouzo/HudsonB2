@@ -11,9 +11,9 @@ The system design and component decisions are being developed for the flight-cri
 
 ## Team
 
-Nicholas: air frame sizing and SolidWorks design, 3D-printed structures, camera fixture, electrical integration, and flight testing.
+**Nicholas**: air frame sizing and SolidWorks design, 3D-printed structures, camera fixture, electrical integration, and flight testing.
 
-David: camera calibration, lateral-offset estimation, rejection of unreliable measurements, onboard software, and synchronized logging and replay. 
+**David**: camera calibration, lateral-offset estimation, rejection of unreliable measurements, onboard software, and synchronized logging and replay. 
 
 ## Next Milestones
 
