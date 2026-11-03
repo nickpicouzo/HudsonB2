@@ -82,7 +82,9 @@ Processing: Every successfully decoded frame
 Output: Total frame count and frame counts classified as BOTH, ONLY_0, ONLY_1, or NEITHER
 
 **Source code:** arcuro_detector.cpp 
+
 **Run command:** build\Release\aruco_detector.exe videos\<video_file>.MOV
+
 **Software revision:** feature/aruco-detection branch, initial C++ ArUco detector implementation.
 
 ## 6. Experimental Results
