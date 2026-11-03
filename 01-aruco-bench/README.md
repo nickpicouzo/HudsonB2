@@ -41,8 +41,8 @@ The three ArUco markers are displayed on the iPhone Duo, which is supported by a
 | Marker display | iPhone Duo |
 | Camera | iPhone 15 Pro Main Camera - 24mm f1.78 |
 | Processing computer | Surface Studio Laptop 2 |
-| Marker dictionary | To be recorded |
-| Marker IDs | To be recorded |
+| Marker dictionary | DICT_4X4_50 |
+| Marker IDs | 0 and 1 | 
 | Camera resolution | 2160 x 3840 |
 
 ## 4. Methodology
@@ -69,11 +69,21 @@ The three ArUco markers are displayed on the iPhone Duo, which is supported by a
 
 ## 5. Software
 
-Document the exact detector implementation, OpenCV version, ArUco dictionary, camera settings, source code location and command used to reproduce the result.
+The ArUco marker detection program was implemented in C++17 using OpenCV 4.12.0 on Windows x64. The program processes prerecorded .MOV video files using cv::VideoCapture and identifies markers with OpenCV's cv::aruco::ArucoDetector.
 
-**Source code:** To be linked  
-**Run command:** To be added  
-**Software revision:** To be recorded
+Detector configuration:
+
+Programming language: C++17
+Computer vision library: OpenCV 4.12.0
+ArUco dictionary: DICT_4X4_50
+Target marker IDs: 0 and 1
+Input: Prerecorded .MOV video
+Processing: Every successfully decoded frame
+Output: Total frame count and frame counts classified as BOTH, ONLY_0, ONLY_1, or NEITHER
+
+**Source code:** arcuro_detector.cpp 
+**Run command:** build\Release\aruco_detector.exe videos\<video_file>.MOV
+**Software revision:** feature/aruco-detection branch, initial C++ ArUco detector implementation.
 
 ## 6. Experimental Results
 
@@ -83,15 +93,17 @@ Add the raw input frame to the results folder.
 
 ### Detection output
 
-Add the detector overlay to the results folder.
+The ArUco Detector successfully identifies both target markers for all 393 frames of the center test recording 
 
 | Metric | Result |
 |---|---|
-| Expected marker IDs | Pending |
-| Detected marker IDs | Pending |
-| Missed markers | Pending |
-| Unexpected detections | Pending |
-| Test outcome | Not yet evaluated |
+| Expected marker IDs | 0,1 |
+| Detected marker IDs | 0,1 |
+| Total frames processed | 393 |
+| Frames with both markers detected |  393 (100%) |
+| Missed markers | None |
+| Unexpected detections | Not evaluated |
+| Test outcome | PASS |
 
 ## 7. Limitations
 
