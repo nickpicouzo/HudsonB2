@@ -17,6 +17,6 @@ The system design and component decisions are being developed for the flight-cri
 
 ## Next Milestones
 
-Nicholas: Complete [Aircraft Preliminary Design Review](docs/02-aircraft-pdr/README.md) and finalize aircraft sizing based on avionics and payload weights. 
+**Nicholas**: Complete [Aircraft Preliminary Design Review](docs/02-aircraft-pdr/README.md) and finalize aircraft sizing based on avionics and payload weights. 
 
-David Gleason: Adding full ArUco dictionary support to ArUco_detector and developing orientation estimation. 
+**David Gleason**: Adding full ArUco dictionary support to ArUco_detector and developing orientation estimation. 
