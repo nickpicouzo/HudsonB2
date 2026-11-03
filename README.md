@@ -1,5 +1,5 @@
 # HudsonB2
-**Autonomous Fixed Wing Flight-Test**
+**Vision-Based Approach Alignment Aircraft**
 
 David Gleason and I, Nicholas Picouzo, are Juniors at the University of Miami studying Mechanical Engineering with an Aerospace concentration. We're designing and building a custom 3D-printed fixed-wing aircraft to test whether on-board sensing can tell us how far the aircraft is left or right of a marked runway, even when the nose is pointed away from it.
 
