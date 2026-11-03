@@ -9,14 +9,14 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(OpenCV CONFIG REQUIRED)
 
 add_executable(replay
-    docs/software/src/replay.cpp
+    docs/milestones/01-aruco-bench/src/replay.cpp
 )
 
 target_link_libraries(replay
     PRIVATE ${OpenCV_LIBS}
 )
 add_executable(aruco_detector
-    docs/software/src/aruco_detector.cpp
+    docs/milestones/01-aruco-bench/src/aruco_detector.cpp
 )
 
 target_link_libraries(aruco_detector
