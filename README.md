@@ -19,6 +19,6 @@ David: camera calibration, lateral-offset estimation, rejection of unreliable me
 
 **Next Milestones**
 
-Nicholas: Complete Aircraft Preliminary Design Review and finalize aircraft sizing based on avionics and payload weights. 
+Nicholas: Complete [Aircraft Preliminary Design Review](docs/02-aircraft-pdr/README.md) and finalize aircraft sizing based on avionics and payload weights. 
 
 David Gleason: Adding full ArUco dictionary support to ArUco_detector and developing orientation estimation. 
