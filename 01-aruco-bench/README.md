@@ -1,0 +1,109 @@
+# ArUco Marker Detection - Initial Bench Experiment
+
+**Status:** Physical setup complete | Software validation pending
+**Contributors:** Nicholas - physical setup and measurements; David - software and detection validation
+
+## 1. Objective
+
+The objective of this experiment is to establish a repeatable ArUco marker detection setup and verify whether the vision software can correctly identify the printed markers in captured images.
+
+This experiment is the first step toward estimating the camera's position and signed lateral displacement relative to a runway centerline. 
+
+
+## 2. Physical Setup
+
+The three ArUco markers are displayed on the iPhone Duo, which is supported by a stack of books. Three tape reference markers are placed in front of the device: one centered and two offset to either side.
+
+
+### Dimensioned setup
+
+![Dimensioned physical setup](images/dimensioned_setup.png)
+
+### Top-down layout
+
+![Top-down schematic of the marker arrangement](images/top_down_sketch.png)
+
+### Measured dimensions
+
+| Parameter | Measurement | Reference |
+|---|---|---|
+| Screen midpoint height | 16.5 cm | Floor to screen midpoint |
+| Center reference distance | 80.0 cm | Screen plane to facing edge of rear-center tape marker |
+| Left reference spacing | 20.0 cm | Center midpoint to inside edge of left tape marker |
+| Right reference spacing | 20.0 cm | Center midpoint to inside edge of right tape marker |
+
+**Measurement notes:** Standard steel tape measure (Metric, 1mm resolution) 
+
+## 3. Hardware
+
+| Component | Configuration |
+|---|---|
+| Marker display | iPhone Duo |
+| Camera | iPhone 15 Pro Main Camera - 24mm f1.78 |
+| Processing computer | Surface Studio Laptop 2 |
+| Marker dictionary | To be recorded |
+| Marker IDs | To be recorded |
+| Camera resolution | 2160 x 3840 |
+
+## 4. Methodology
+
+### 4.1 Physical Setup and Data Collection
+1. iPhone Duo was propped up on books, distance from floor to display midpoint measured.
+2. Measured a perpendicular distance 80 cm from the center of the display, and placed duct tape reference. Measured and placed offset references 20 cm from middle reference. 
+3. Displayed the ArUco markers (0 & 1) on Duo display
+4. Placed and secured the camera on the reference, recorded video for 5 seconds. 
+5. Repeated step 4 with 7 videos: 
+- `Center`
+- `Left`
+- `Right`
+- `Left_Angled`
+- `Right_Angled`
+- `QR_Test`
+- `No_Target`
+### 4.2 Software Processing and Validation
+6. Execute the ArUco detection program.
+7. Save the returned marker IDs and detected corner coordinates.
+8. Save an annotated output generated from the same input frame.
+9. Compare expected and observed detections.
+10. Record failures, test configuration and software revision.
+
+## 5. Software
+
+Document the exact detector implementation, OpenCV version, ArUco dictionary, camera settings, source code location and command used to reproduce the result.
+
+**Source code:** To be linked  
+**Run command:** To be added  
+**Software revision:** To be recorded
+
+## 6. Experimental Results
+
+### Input image
+
+Add the raw input frame to the results folder.
+
+### Detection output
+
+Add the detector overlay to the results folder.
+
+| Metric | Result |
+|---|---|
+| Expected marker IDs | Pending |
+| Detected marker IDs | Pending |
+| Missed markers | Pending |
+| Unexpected detections | Pending |
+| Test outcome | Not yet evaluated |
+
+## 7. Limitations
+
+- Marker identification is not equivalent to calibrated camera pose estimation.
+- Camera intrinsics and distortion must be determined for metric pose estimation.
+- Dimensions and physical reference points must be verified before geometric calculations.
+- Performance under different lighting, range and camera yaw is not yet established.
+
+## 8. Next Steps
+
+- Complete the first documented detection run.
+- Save paired raw and annotated images.
+- Measure and define all required marker coordinates.
+- Calibrate the camera.
+- Extend the experiment to camera pose and signed lateral offset estimation.
