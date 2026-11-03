@@ -9,7 +9,7 @@ Our first experiment is was a fixture that let us adjust the camera position ind
 
 [ArUco_Bench](docs/01-aruco-bench/README.md) completed. Results show that the initial ArUco detector had a 100 percent marker detection rate, processed every frame of the video and didn't miss any markers, and was able to identify unique ArUco IDs successfully. 
 
-The system design and component decisions are being developed for the flight-critical avionics and the experimental vision payload. Print tests using PLA Aero using Nicholas' Bambu Lab P2S. 
+The system design and component decisions are being developed for the flight-critical avionics and the experimental vision payload. PLA Aero print and structural tests being conducted using Nicholas' Bambu Lab P2S. 
 
 ## Team
 
