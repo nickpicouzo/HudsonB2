@@ -53,13 +53,13 @@ The three ArUco markers are displayed on the iPhone Duo, which is supported by a
 3. Displayed the ArUco markers (0 & 1) on Duo display
 4. Placed and secured the camera on the reference, recorded video for 5 seconds. 
 5. Repeated step 4 with 7 videos: 
-- `Center`
-- `Left`
-- `Right`
-- `Left_Angled`
-- `Right_Angled`
-- `QR_Test`
-- `No_Target`
+- `center`
+- `left`
+- `right`
+- `leftAngled`
+- `rightAngled`
+- `qrTest`
+- `neither`
 ### 4.2 Software Processing and Validation
 6. Execute the ArUco detection program.
 7. Save the returned marker IDs and detected corner coordinates.
