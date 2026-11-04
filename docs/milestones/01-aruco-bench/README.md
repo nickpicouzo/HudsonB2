@@ -128,7 +128,6 @@ These results verify marker visibility only. They do not demonstrate metric late
 
 Representative raw camera frames and detector-annotated images will be included in the [images](images/) directory.
 
-
 ## 7. Limitations
 
 - Marker identification is not equivalent to calibrated camera pose estimation.
