@@ -1,0 +1,10 @@
+
+recording,frames,both,only_0,only_1,neither
+center.MOV,393,393,0,0,0
+left.MOV,427,427,0,0,0
+leftAngled.MOV,413,413,0,0,0
+right.MOV,390,389,0,1,0
+rightAngled.MOV,420,420,0,0,0
+neither.MOV,406,0,0,0,406
+qrTest.MOV,440,0,0,0,440
+singleID.MOV,372,0,372,0,0
