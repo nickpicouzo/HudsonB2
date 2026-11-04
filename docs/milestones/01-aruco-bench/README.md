@@ -52,7 +52,7 @@ The three ArUco markers are displayed on the iPhone Duo, which is supported by a
 2. Measured a perpendicular distance 80 cm from the center of the display, and placed duct tape reference. Measured and placed offset references 20 cm from middle reference. 
 3. Displayed the ArUco markers (0 & 1) on Duo display
 4. Placed and secured the camera on the reference, recorded video for 5 seconds. 
-5. Repeated step 4 with 7 videos: 
+5. Repeated step 4 with 8 videos: 
 - `center`
 - `left`
 - `right`
@@ -60,6 +60,7 @@ The three ArUco markers are displayed on the iPhone Duo, which is supported by a
 - `rightAngled`
 - `qrTest`
 - `neither`
+- `singleID`
 ### 4.2 Software Processing and Validation
 6. Execute the ArUco detection program.
 7. Save the returned marker IDs and detected corner coordinates.
