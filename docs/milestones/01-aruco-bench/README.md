@@ -89,23 +89,45 @@ Output: Total frame count and frame counts classified as BOTH, ONLY_0, ONLY_1, o
 
 ## 6. Experimental Results
 
-### Input image
+### 6.1 Marker Detection Results
 
-Add the raw input frame to the results folder.
+Eight prerecorded MOV files were processed using the ArUco detector. The program used the `DICT_4X4_50` dictionary to identify target marker IDs 0 and 1. Each successfully decoded frame was classified into one of four categories: `BOTH`, `ONLY_0`, `ONLY_1`, or `NEITHER`.
 
-### Detection output
+| Recording | Frames | BOTH | ONLY_0 | ONLY_1 | NEITHER |
+|---|---:|---:|---:|---:|---:|
+| center.MOV | 393 | 393 | 0 | 0 | 0 |
+| left.MOV | 427 | 427 | 0 | 0 | 0 |
+| leftAngled.MOV | 413 | 413 | 0 | 0 | 0 |
+| right.MOV | 390 | 389 | 0 | 1 | 0 |
+| rightAngled.MOV | 420 | 420 | 0 | 0 | 0 |
+| neither.MOV | 406 | 0 | 0 | 0 | 406 |
+| qrTest.MOV | 440 | 0 | 0 | 0 | 440 |
+| singleID.MOV | 372 | 0 | 372 | 0 | 0 |
 
-The ArUco Detector successfully identifies both target markers for all 393 frames of the center test recording 
+[Full detection results](results/frame_counts.csv)
 
-| Metric | Result |
-|---|---|
-| Expected marker IDs | 0,1 |
-| Detected marker IDs | 0,1 |
-| Total frames processed | 393 |
-| Frames with both markers detected |  393 (100%) |
-| Missed markers | None |
-| Unexpected detections | Not evaluated |
-| Test outcome | PASS |
+### 6.2 Detection Performance
+
+Across the recordings containing both markers, the detector identified both IDs in 2,042 of 2,043 frames, giving a **99.95%** both-marker detection rate.
+
+The only incomplete two-marker detection occurred in `right.MOV`, where one frame contained marker 1 without marker 0.
+
+The two negative-control recordings (`neither.MOV` and `qrTest.MOV`) produced no detections of target IDs 0 or 1 across 846 frames, and showed that the detector in this distinguish between true ArUco markers and plain QR codes under tested conditions.
+
+The single-marker recording (`singleID.MOV`) correctly identified only marker 0 in all 372 frames.
+
+### 6.3 Experimental Interpretation
+
+The initial bench tests demonstrate consistent recognition of target IDs 0 and 1 across the recorded camera positions and orientations.
+
+The results support progressing to marker-corner extraction, camera calibration, and geometric pose estimation.
+
+These results verify marker visibility only. They do not demonstrate metric lateral-position estimation, yaw compensation, or latency performance.
+
+### 6.4 Visual Evidence
+
+Representative raw camera frames and detector-annotated images will be included in the [images](images/) directory.
+
 
 ## 7. Limitations
 

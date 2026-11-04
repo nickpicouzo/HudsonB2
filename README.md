@@ -5,7 +5,7 @@ David Gleason and I, Nicholas Picouzo, are Juniors at the University of Miami st
 
 ## Current Status
 
-[ArUco_Bench](docs/01-aruco-bench/README.md) completed. Results show that the initial ArUco detector had a 100 percent marker detection rate, processed every frame of the video and didn't miss any markers, and was able to identify unique ArUco IDs successfully. 
+[ArUco_Bench](docs/milestones/01-aruco-bench/README.md) completed. Results show that the initial ArUco detector had a 100 percent marker detection rate, processed every frame of the video and didn't miss any markers, and was able to identify unique ArUco IDs successfully. 
 
 The system design and component decisions are being developed for the flight-critical avionics and the experimental vision payload. PLA Aero print and structural tests being conducted using Nicholas' Bambu Lab P2S. 
 
@@ -17,6 +17,6 @@ The system design and component decisions are being developed for the flight-cri
 
 ## Next Milestones
 
-**Nicholas**: Complete [Aircraft Preliminary Design Review](docs/02-aircraft-pdr/README.md) and finalize aircraft sizing based on avionics and payload weights. 
+**Nicholas**: Complete [Aircraft Preliminary Design Review](docs/aircraft-pdr/README.md) and finalize aircraft sizing based on avionics and payload weights. 
 
 **David Gleason**: Adding full ArUco dictionary support to ArUco_detector and developing orientation estimation. 
