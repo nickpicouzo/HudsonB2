@@ -21,9 +21,9 @@ Record a technical, hardware, software, integration, or workflow obstacle only w
 |---|---|---|---|---:|---|---|
 | [HB2-PRB-001](#hb2-prb-001--duplicate-windows-csv-newlines) | 2026-11-09 | Analysis software | Windows CSV doubled line terminators | 6/10 | Systems / verification | Resolved |
 | [HB2-PRB-002](#hb2-prb-002--duplicate-mass-allocation-ids) | 2026-11-09 | Analysis software | Duplicate IDs silently dropped allocation mass | 8/10 | Simulation / verification | Resolved |
-| [HB2-PRB-003](#hb2-prb-003--vercel-access-from-school-network) | Nov 2026; exact day unverified | Infrastructure | Deployed website unreachable from school Wi-Fi | 6/10 | Workspace team | Resolved (workaround) |
-| [HB2-PRB-004](#hb2-prb-004--supabase-account-invitation-flow) | Nov 2026; exact day unverified | Authentication | Invitation redirect and callback setup failures | 7/10 | Workspace team | Resolved |
-| [HB2-PRB-005](#hb2-prb-005--background-sync-erasing-form-input) | Nov 2026; exact day unverified | Frontend | Auto-refresh cleared unsaved title/text | 6/10 | Workspace team | In progress |
+| [HB2-PRB-003](#hb2-prb-003--vercel-access-from-school-network) | 2026-11-11 | Infrastructure | Deployed website unreachable from school Wi-Fi | 6/10 | Workspace team | Resolved (workaround) |
+| [HB2-PRB-004](#hb2-prb-004--supabase-account-invitation-flow) | 2026-11-11 | Authentication | Invitation redirect and callback setup failures | 7/10 | Workspace team | Resolved |
+| [HB2-PRB-005](#hb2-prb-005--background-sync-erasing-form-input) | 2026-11-12 | Frontend | Auto-refresh cleared unsaved title/text | 6/10 | Workspace team | In progress |
 
 ## HB2-PRB-001 — Duplicate Windows CSV newlines
 
